@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "RiotLolAccount" ALTER COLUMN "gameName" DROP NOT NULL,
+ALTER COLUMN "tagLine" DROP NOT NULL;
