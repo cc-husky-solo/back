@@ -10,6 +10,7 @@
   "author": "Minetoma Gustavo",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.18.0",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^4.17.21",
     "dotenv": "^16.4.5",
