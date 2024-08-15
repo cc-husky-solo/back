@@ -22,7 +22,7 @@ const riotLolAccountsController = {
         const results = await riotApiGetAccount(params);
         if (results) {
           results.region = params.region.toUpperCase() as Region;
-          const newAccount = riotLolAccountsModel.addAccount(results);
+          const newAccount = await riotLolAccountsModel.addAccount(results);
           res.status(200).json(newAccount);
         } else res.status(404).json(results);
       }
