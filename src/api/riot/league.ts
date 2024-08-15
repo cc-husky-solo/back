@@ -23,6 +23,7 @@ export const getBySummonerId = async (
   const response: LeagueEntryDto = (
     await (await fetch(completePath, config)).json()
   )[0];
+  if (!response) return null;
   if (response.summonerId) return response;
   else {
     console.log(completePath, response);
